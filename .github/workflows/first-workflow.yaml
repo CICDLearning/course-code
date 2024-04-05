@@ -1,0 +1,15 @@
+name: First Workflow
+on: [push]
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run shell commands
+        run: |
+          echo "Hello, World!"
+          echo "This is my first GitHub Actions workflow"
+          echo "I am learning GitHub Actions"
+          hostname
+          whoami
+          more /etc/os-release
