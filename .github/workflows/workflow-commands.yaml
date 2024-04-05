@@ -7,4 +7,9 @@ jobs:
     steps:
       - name: Setting and error message
         run: echo "::error::Missing semi-colon"
-      
+      - name: Setting an error message with parallel-job-macos
+        run: echo "::error title: Error title, file=app.js. line=2, endLine=3, col5, endColumn=7::Missing semi-colon"
+      - name: Setting an error message with parallel-job-macos
+        run: echo "::error title: Error title, file=app.js. line=2, endLine=3, col5, endColumn=7::Missing semi-colon"
+      - name: Setting an warning message with parallel-job-macos
+        run: echo "::error title: Warning title, file=app.js. line=2, endLine=3, col5, endColumn=7::Missing semi-colon"
